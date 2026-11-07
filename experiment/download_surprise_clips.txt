@@ -1,0 +1,107 @@
+===============================================================
+SURPRISE CONDITION — YouTube Magic Trick Clips (MagicCATs Fallback)
+===============================================================
+
+These 12 clips (pick best 10) are YouTube magic performances with
+clear surprise/reveal moments. Use them as SUR_01–SUR_10 stimuli
+if you can't get the MagicCATs password.
+
+NOTE: This is a fallback. Mention in your report that YouTube clips
+lack the standardised surprise ratings that MagicCATs provides.
+
+
+STEP 1: Install yt-dlp (if not already installed)
+--------------------------------------------------
+  pip install yt-dlp
+  OR on Mac: brew install yt-dlp
+
+
+STEP 2: Download all clips
+---------------------------
+Run these commands in Terminal / Command Prompt from your
+raw_stimuli/magiccats/ folder (or wherever you want to save them):
+
+# 1. Shin Lim — close-up card magic on AGT (4:43, ~7M views)
+#    Surprise moment: multiple card transformations throughout
+yt-dlp -f "bestvideo[height<=720]+bestaudio" -o "SUR_01_ShinLim_AGT.mp4" "https://www.youtube.com/watch?v=Pxzjzp8NtE0"
+
+# 2. Eric Chien — visual card magic on AGT (4:59, huge views)
+#    Surprise moment: cards appear/vanish impossibly on table
+yt-dlp -f "bestvideo[height<=720]+bestaudio" -o "SUR_02_EricChien_AGT.mp4" "https://www.youtube.com/watch?v=hbsm2rmg-IU"
+
+# 3. Asi Wind — reveals trick AND still fools Penn & Teller (9:40, 18M views)
+#    Surprise moment: reveals method then does impossible version
+yt-dlp -f "bestvideo[height<=720]+bestaudio" -o "SUR_03_AsiWind_PennTeller.mp4" "https://www.youtube.com/watch?v=fg0CC99hVK8"
+
+# 4. Garrett Thomas — fools Penn & Teller with ring magic (close-up)
+#    Surprise moment: ring passes through fingers impossibly
+yt-dlp -f "bestvideo[height<=720]+bestaudio" -o "SUR_04_GarrettThomas_Ring.mp4" "https://www.youtube.com/watch?v=x_Lm7cvA4Vw"
+
+# 5. David Blaine — card prediction for Jamie Foxx
+#    Surprise moment: impossible card prediction reveal
+yt-dlp -f "bestvideo[height<=720]+bestaudio" -o "SUR_05_DavidBlaine_JamieFoxx.mp4" "https://www.youtube.com/watch?v=3BFoYrnoIZM"
+
+# 6. David Blaine — BLOW YOUR MIND card trick
+#    Surprise moment: card trick with shocking reveal
+yt-dlp -f "bestvideo[height<=720]+bestaudio" -o "SUR_06_DavidBlaine_BlowMind.mp4" "https://www.youtube.com/watch?v=JAhICwtlidU"
+
+# 7. Mat Franco — card story trick AGT 2014 audition
+#    Surprise moment: cards tell impossible story, judges amazed
+yt-dlp -f "bestvideo[height<=720]+bestaudio" -o "SUR_07_MatFranco_AGT.mp4" "https://www.youtube.com/watch?v=5-uZsYGFJMk"
+
+# 8. Ryan Hayashi — coin magic on Penn & Teller Fool Us
+#    Surprise moment: epic emotional ending with coin production
+yt-dlp -f "bestvideo[height<=720]+bestaudio" -o "SUR_08_RyanHayashi_Coins.mp4" "https://www.youtube.com/watch?v=kjURsDCIJws"
+
+# 9. Javi Benitez — "Best sleight of hand we've ever seen" Penn & Teller
+#    Surprise moment: coin/card sleight of hand, Penn stunned
+yt-dlp -f "bestvideo[height<=720]+bestaudio" -o "SUR_09_JaviBenitez_PennTeller.mp4" "https://www.youtube.com/watch?v=1GkGn6GQUII"
+
+# 10. Tom London — tech magic on AGT 2017
+#     Surprise moment: phone-based magic trick amazes judges
+yt-dlp -f "bestvideo[height<=720]+bestaudio" -o "SUR_10_TomLondon_TechMagic.mp4" "https://www.youtube.com/watch?v=Q6RrzJ7u_UU"
+
+# 11. BACKUP: Mat Franco returns to AGT 2015 (in case any above are removed)
+yt-dlp -f "bestvideo[height<=720]+bestaudio" -o "SUR_11_MatFranco_Return.mp4" "https://www.youtube.com/watch?v=D7DYnHFIFt4"
+
+# 12. BACKUP: Penn & Teller compilation of best foolers
+yt-dlp -f "bestvideo[height<=720]+bestaudio" -o "SUR_12_PennTeller_Compilation.mp4" "https://www.youtube.com/watch?v=GvwGBdw0aT4"
+
+
+STEP 3: Trim to 15–25 seconds around the surprise reveal
+---------------------------------------------------------
+Use FFmpeg to trim each clip to the key surprise moment:
+
+  ffmpeg -i SUR_01_ShinLim_AGT.mp4 -ss 00:03:10 -t 00:00:25 -c copy SUR_01_raw.mp4
+
+Adjust -ss (start time) and -t (duration) for each clip.
+Watch each one and note when the biggest "reveal" or "impossible
+moment" happens, then trim to 15–25 seconds centred on that moment.
+
+
+STEP 4: Rename to final format
+-------------------------------
+After trimming, your files should be:
+  SUR_01_raw.mp4  through  SUR_10_raw.mp4
+
+Place them in: raw_stimuli/magiccats/
+
+
+===============================================================
+QUICK BATCH DOWNLOAD (copy-paste entire block into Terminal):
+===============================================================
+
+cd "raw_stimuli/magiccats"
+
+yt-dlp -f "bestvideo[height<=720]+bestaudio" -o "SUR_01_ShinLim_AGT.mp4" "https://www.youtube.com/watch?v=Pxzjzp8NtE0" && \
+yt-dlp -f "bestvideo[height<=720]+bestaudio" -o "SUR_02_EricChien_AGT.mp4" "https://www.youtube.com/watch?v=hbsm2rmg-IU" && \
+yt-dlp -f "bestvideo[height<=720]+bestaudio" -o "SUR_03_AsiWind_PennTeller.mp4" "https://www.youtube.com/watch?v=fg0CC99hVK8" && \
+yt-dlp -f "bestvideo[height<=720]+bestaudio" -o "SUR_04_GarrettThomas_Ring.mp4" "https://www.youtube.com/watch?v=x_Lm7cvA4Vw" && \
+yt-dlp -f "bestvideo[height<=720]+bestaudio" -o "SUR_05_DavidBlaine_JamieFoxx.mp4" "https://www.youtube.com/watch?v=3BFoYrnoIZM" && \
+yt-dlp -f "bestvideo[height<=720]+bestaudio" -o "SUR_06_DavidBlaine_BlowMind.mp4" "https://www.youtube.com/watch?v=JAhICwtlidU" && \
+yt-dlp -f "bestvideo[height<=720]+bestaudio" -o "SUR_07_MatFranco_AGT.mp4" "https://www.youtube.com/watch?v=5-uZsYGFJMk" && \
+yt-dlp -f "bestvideo[height<=720]+bestaudio" -o "SUR_08_RyanHayashi_Coins.mp4" "https://www.youtube.com/watch?v=kjURsDCIJws" && \
+yt-dlp -f "bestvideo[height<=720]+bestaudio" -o "SUR_09_JaviBenitez_PennTeller.mp4" "https://www.youtube.com/watch?v=1GkGn6GQUII" && \
+yt-dlp -f "bestvideo[height<=720]+bestaudio" -o "SUR_10_TomLondon_TechMagic.mp4" "https://www.youtube.com/watch?v=Q6RrzJ7u_UU"
+
+echo "All surprise clips downloaded!"

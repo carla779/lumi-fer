@@ -1,0 +1,51 @@
+stimulus_id,target_emotion,stimulus_type,source_database,notes
+HAP_01,happy,video,YouTube,Tom & Jerry slapstick chase
+HAP_02,happy,video,YouTube,SpongeBob funny moment
+HAP_03,happy,video,YouTube,Road Runner ACME backfire
+HAP_04,happy,video,YouTube,Oggy and the Cockroaches slapstick
+HAP_05,happy,video,YouTube,Mr Bean Animated physical comedy
+HAP_06,happy,video,YouTube,Funny cat compilation
+HAP_07,happy,video,YouTube,Funny dog compilation
+HAP_08,happy,video,YouTube,Phineas & Ferb Perry / Doofenshmirtz
+HAP_09,happy,video,YouTube,Shaun the Sheep silent slapstick
+HAP_10,happy,video,YouTube,Try not to laugh clean compilation
+SAD_01,sad,video,YouTube,Up - Carl alone after Ellie
+SAD_02,sad,video,YouTube,Finding Nemo barracuda attack
+SAD_03,sad,video,YouTube,Lion King - Mufasa death
+SAD_04,sad,video,YouTube,Toy Story 3 incinerator scene
+SAD_05,sad,video,YouTube,Changing Batteries animated short
+SAD_06,sad,video,YouTube,Coco - Mama Coco remembers
+SAD_07,sad,video,YouTube,Trois Petits Chats ending
+SAD_08,sad,video,YouTube,Futurama - Seymour waiting
+SAD_09,sad,video,YouTube,Iron Giant Superman sacrifice
+SAD_10,sad,video,YouTube,Inside Out - Bing Bong fading
+ANG_01,angry,video,YouTube,Dashcam road rage
+ANG_02,angry,video,YouTube,Bullying with bystander intervention
+ANG_03,angry,video,YouTube,Gaming rage moment
+ANG_04,angry,video,YouTube,Scar betrayal - Long live the king
+ANG_05,angry,video,YouTube,Terrible referee call football
+ANG_06,angry,video,YouTube,Lotso betrayal Toy Story 3
+ANG_07,angry,video,YouTube,Prank destroying belongings
+ANG_08,angry,video,YouTube,Cheater caught gaming
+ANG_09,angry,video,YouTube,Matilda Trunchbull scene
+ANG_10,angry,video,YouTube,Queue-cutting social experiment
+SUR_01,surprised,video,YouTube,Rube Goldberg machine finale
+SUR_02,surprised,video,YouTube,Optical illusion reveal
+SUR_03,surprised,video,YouTube,Zach King magic trick
+SUR_04,surprised,image,YouTube,Zach King impossible trick (image)
+SUR_05,surprised,video,YouTube,Animal does something unexpected
+SUR_06,surprised,video,YouTube,Impossible sports moment
+SUR_07,surprised,video,YouTube,Wholesome surprise hidden camera
+SUR_08,surprised,video,YouTube,Animated short plot twist
+SUR_09,surprised,video,YouTube,Science experiment surprise
+SUR_10,surprised,video,YouTube,Street performer unexpected talent reveal
+NEU_01,neutral,video,YouTube,Drone footage farmland
+NEU_02,neutral,video,YouTube,Cloud timelapse city
+NEU_03,neutral,video,YouTube,Folding towels tutorial
+NEU_04,neutral,video,YouTube,Highway traffic calm
+NEU_05,neutral,video,YouTube,Fish swimming pond
+NEU_06,neutral,video,YouTube,Kneading bread dough
+NEU_07,neutral,video,YouTube,Cake decorating no talking
+NEU_08,neutral,video,YouTube,Weather forecast UK
+NEU_09,neutral,video,YouTube,Typing on keyboard
+NEU_10,neutral,video,YouTube,Walking POV city street

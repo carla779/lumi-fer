@@ -1,0 +1,98 @@
+===============================================================
+HOW TO DOWNLOAD YOUR FILMSTIM CLIPS
+===============================================================
+
+OPTION 1: Paste this into your Arc browser console
+(Right-click on the FilmStim page > Inspect > Console tab)
+
+Copy everything between the --- lines:
+
+---
+const clips = {
+  // AMUSEMENT (4 English clips)
+  23: "HAP_AmusementFishWanda",
+  34: "HAP_AmusementMary2",
+  61: "HAP_AmusementMary1",
+  14: "HAP_AmusementHarrySally",
+  // SADNESS (9 English clips)
+  36: "SAD_CityOfAngels",
+  52: "SAD_DangerousMinds",
+  62: "SAD_Philadelphia",
+  3:  "SAD_DeadPoets1",
+  21: "SAD_DeadManWalking",
+  19: "SAD_SchindlersList1",
+  43: "SAD_PerfectWorld",
+  54: "SAD_LifeIsBeautiful",
+  9:  "SAD_ET",
+  // ANGER (5 English clips)
+  2:  "ANG_SchindlersList2",
+  25: "ANG_Sleepers",
+  51: "ANG_LeavingLasVegas",
+  5:  "ANG_AmericanHistoryX",
+  68: "ANG_SchindlersList3",
+  // NEUTRAL (4 English clips)
+  45: "NEU_Blue2",
+  58: "NEU_TheLover",
+  49: "NEU_Blue3",
+  64: "NEU_Blue1"
+};
+
+Object.entries(clips).forEach(([num, name], i) => {
+  setTimeout(() => {
+    const a = document.createElement('a');
+    a.href = `https://sites.uclouvain.be/ipsp/FilmStim/En/${num}.mp4`;
+    a.download = `${name}.mp4`;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    console.log(`Downloading ${name} (${i+1}/${Object.keys(clips).length})`);
+  }, i * 3000);
+});
+---
+
+
+OPTION 2: Direct URLs (click each one to download)
+
+AMUSEMENT:
+https://sites.uclouvain.be/ipsp/FilmStim/En/23.mp4  (A Fish Called Wanda)
+https://sites.uclouvain.be/ipsp/FilmStim/En/34.mp4  (Something About Mary 2)
+https://sites.uclouvain.be/ipsp/FilmStim/En/61.mp4  (Something About Mary 1)
+https://sites.uclouvain.be/ipsp/FilmStim/En/14.mp4  (When Harry Met Sally)
+
+SADNESS:
+https://sites.uclouvain.be/ipsp/FilmStim/En/36.mp4  (City of Angels)
+https://sites.uclouvain.be/ipsp/FilmStim/En/52.mp4  (Dangerous Minds)
+https://sites.uclouvain.be/ipsp/FilmStim/En/62.mp4  (Philadelphia)
+https://sites.uclouvain.be/ipsp/FilmStim/En/3.mp4   (Dead Poets Society)
+https://sites.uclouvain.be/ipsp/FilmStim/En/21.mp4  (Dead Man Walking)
+https://sites.uclouvain.be/ipsp/FilmStim/En/19.mp4  (Schindler's List 1)
+https://sites.uclouvain.be/ipsp/FilmStim/En/43.mp4  (A Perfect World)
+https://sites.uclouvain.be/ipsp/FilmStim/En/54.mp4  (Life Is Beautiful)
+https://sites.uclouvain.be/ipsp/FilmStim/En/9.mp4   (E.T.)
+
+ANGER:
+https://sites.uclouvain.be/ipsp/FilmStim/En/2.mp4   (Schindler's List 2)
+https://sites.uclouvain.be/ipsp/FilmStim/En/25.mp4  (Sleepers)
+https://sites.uclouvain.be/ipsp/FilmStim/En/51.mp4  (Leaving Las Vegas)
+https://sites.uclouvain.be/ipsp/FilmStim/En/5.mp4   (American History X)
+https://sites.uclouvain.be/ipsp/FilmStim/En/68.mp4  (Schindler's List 3)
+
+NEUTRAL:
+https://sites.uclouvain.be/ipsp/FilmStim/En/45.mp4  (Blue 2)
+https://sites.uclouvain.be/ipsp/FilmStim/En/58.mp4  (The Lover)
+https://sites.uclouvain.be/ipsp/FilmStim/En/49.mp4  (Blue 3)
+https://sites.uclouvain.be/ipsp/FilmStim/En/64.mp4  (Blue 1)
+
+
+NOTE: You need 10 amusement clips but only 4 have English versions.
+The remaining 6 top-rated are French-only. You could either:
+  a) Use the French versions (emotion still works via physical comedy/visuals)
+  b) Find 6 more English clips with lower discreteness scores
+
+French-only amusement clips (top 4):
+https://sites.uclouvain.be/ipsp/FilmStim/8.mp4   (Les Trois Freres, score: 4.549)
+https://sites.uclouvain.be/ipsp/FilmStim/12.mp4  (The Dinner Game, score: 4.498)
+https://sites.uclouvain.be/ipsp/FilmStim/67.mp4  (La Cite de la Peur, score: 4.293)
+https://sites.uclouvain.be/ipsp/FilmStim/1.mp4   (The Visitors, score: 4.269)
+
+You also need 1 more neutral clip (have 4, need 5).

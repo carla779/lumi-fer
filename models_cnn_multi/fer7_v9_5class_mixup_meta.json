@@ -1,0 +1,31 @@
+{
+  "classes": [
+    "angry",
+    "happy",
+    "sad",
+    "surprise",
+    "neutral"
+  ],
+  "arch": "efficientnet_b0",
+  "img_size": 224,
+  "pretrained": true,
+  "use_au": true,
+  "au_cols": [
+    "au_eye_ear_l",
+    "au_eye_ear_r",
+    "au_eye_open_l",
+    "au_eye_open_r",
+    "au_mouth_open",
+    "au_mouth_width",
+    "au_brow_raise_l",
+    "au_brow_raise_r",
+    "au_brow_inner_dist"
+  ],
+  "lambda_au": 0.05,
+  "smoothing": 0.05,
+  "dropout": 0.2,
+  "freeze_epochs": 5,
+  "mixup_alpha": 0.2,
+  "csv": "C:\\Users\\super\\PyCharmMiscProject\\unified_fer7_processed_au_FRIEND.csv",
+  "best_ckpt": "C:\\Users\\super\\PyCharmMiscProject\\models_cnn_multi\\fer7_v9_5class_mixup_best.pt"
+}

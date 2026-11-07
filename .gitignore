@@ -1,0 +1,37 @@
+# Python / IDE
+__pycache__/
+*.pyc
+.venv*/
+.idea/
+.claude/
+.DS_Store
+
+# Model weights (share via GitHub Releases instead)
+*.pt
+*.pth
+*.joblib
+
+# Datasets and derived data (research licences, not redistributable)
+DATASETS/
+processed_faces/
+dataset_csv/
+unified_fer7*.csv
+features_*.csv
+fer_features_*/
+*.zip
+
+# Participant study data — never commit
+results/
+data/
+raw_video/
+fer_logs/
+*_demographics.csv
+*_trial_results.csv
+*_fer_log.csv
+
+# Stimulus media
+stimuli*/
+raw_stimuli*/
+*.mp4
+*.avi
+*.mov

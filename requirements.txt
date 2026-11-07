@@ -1,0 +1,10 @@
+torch
+torchvision
+timm
+mediapipe>=0.10.14
+opencv-python
+numpy
+pandas
+scikit-learn
+Pillow
+joblib
